@@ -1,7 +1,7 @@
 #include "MaskBitWIthFlagEbon/MaskBitWithFlag.h"
 #include <string>
 #include <iostream>
-#include "namespaceEbon/CustomHello.h"
+#include "NamespaceEbon/CustomHello.h"
 
 int main()
 {
