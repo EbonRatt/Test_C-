@@ -8,4 +8,9 @@ add_executable(Test_C++ main.cpp
         MaskBitWIthFlagEbon/MaskBitWithFlag.h
         namespaceEbon/CustomHello.h
         namespaceEbon/sayHelloCollection.cpp
+        InlineAndNamespace/GameConfig.h
+        InlineAndNamespace/Lobby.cpp
+        InlineAndNamespace/Lobby2.cpp
+        NamespaceEbon/Engine.h
+        NamespaceEbon/CallEngine.cpp
 )

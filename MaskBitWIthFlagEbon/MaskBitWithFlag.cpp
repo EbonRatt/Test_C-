@@ -9,8 +9,13 @@ void MaskBitWithFlag::TestingMaskBitWithFlag() {
     int inputPlayer;
     uint8_t playState = 0x00;
 
-    uint8_t jumpState = 0x02;
-    uint8_t moveState = 0x04;
+    constexpr uint8_t jumpState = 0x02; // 0000 0010 → bit 1
+    constexpr uint8_t moveState = 0x04; // 0000 0100 → bit 2
+
+    // Left shift — clearest intent
+    constexpr uint8_t mask0 { 1 << 0 };  // 0000 0001
+    constexpr uint8_t mask1 { 1 << 1 };  // 0000 0010
+    constexpr uint8_t mask2 { 1 << 2 };  // 0000 0100
 
 
     do {
@@ -21,13 +26,13 @@ void MaskBitWithFlag::TestingMaskBitWithFlag() {
         std::cout<< inputPlayer;
 
         switch (inputPlayer) {
-            case 1 : playState |= jumpState;
+            case 1 : playState |= jumpState;  // turn jumping ON
                 break;
-            case 2 : playState |= moveState;
+            case 2 : playState |= moveState; // turn moving ON
                 break;
-            case 4 : playState &= ~jumpState;
+            case 4 : playState &= ~jumpState; // turn jumping OFF
                 break;
-            case 3 : playState &= ~moveState;
+            case 3 : playState &= ~moveState; // turn moving OFF
                 break;
             default: break;
         }
