@@ -13,4 +13,6 @@ add_executable(Test_C++ main.cpp
         InlineAndNamespace/Lobby2.cpp
         NamespaceEbon/Engine.h
         NamespaceEbon/CallEngine.cpp
+        CompileTime/TestContexpr.h
+        Random/Random.h
 )
