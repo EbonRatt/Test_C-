@@ -4,10 +4,10 @@
 #include "NamespaceEbon/CustomHello.h"
 #include "CompileTime/TestContexpr.h"
 #include "Random/Random.h"
+#include "TypeAliases/Player.h"
 
 int main()
 {
-    auto x =  Random::getInt(1,10);
-    std::cout<< x;
+    Player::Health x = 10;
     return 0;
 }

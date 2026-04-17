@@ -15,4 +15,5 @@ add_executable(Test_C++ main.cpp
         NamespaceEbon/CallEngine.cpp
         CompileTime/TestContexpr.h
         Random/Random.h
+        TypeAliases/Player.h
 )
