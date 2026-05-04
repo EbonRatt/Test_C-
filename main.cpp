@@ -5,9 +5,14 @@
 #include "CompileTime/TestContexpr.h"
 #include "Random/Random.h"
 #include "TypeAliases/Player.h"
+#include "Template/TestTemplate.h"
+#include "PointerAndRef/Player.h"
 
 int main()
 {
-    Player::Health x = 10;
+    PlayerPointer::Player player {100};
+    PlayerPointer::AttackPlayer(&player,10);
+    PlayerPointer::AttackPlayer(&player,10);
+
     return 0;
 }

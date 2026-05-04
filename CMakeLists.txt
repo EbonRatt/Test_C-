@@ -16,4 +16,6 @@ add_executable(Test_C++ main.cpp
         CompileTime/TestContexpr.h
         Random/Random.h
         TypeAliases/Player.h
+        Template/TestTemplate.h
+        PointerAndRef/Player.h
 )
